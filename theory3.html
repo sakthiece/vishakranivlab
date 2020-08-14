@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE18R354 - Virtual Lab</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Inline Css -->
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="top-image">
+        <img src="./images/klu.jpeg" />
+      </div>
+  
+    <div class="aim">
+        <header>
+          <h2>
+           Reaction Timer - NOT gate and its application in Fuel Level Indicator
+          </h2>
+        </header>
+    </div>
+
+    <div>
+        <h4 class="aim-div">
+          Introduction
+        <h4>
+        <p class="container p-theory">
+          The NOT gate has only one input and one output. It provides an output that is inverse of the input i.e. it changes a 1 at its input to a 0 at the output and vice-versa. The Boolean expression for NOT is expressed as a bar or a single prime (apostrophe) over the variable. If input A passes through two NOT gates, the result is 'double NOT A', which equals the input A. The NOT operation is called a unary operation since it operates upon only one variable. Conversely, the OR and AND operations are binary operations as two or more variables are involved.
+        
+        <h4 class="aim-div">
+          1. NOT GATE
+        </h4>
+          
+          <div class="container theory-img">
+            <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fprojectiot123.com%2Fwp-content%2Fuploads%2F2019%2F05%2FIntroduction-to-NOT-Gate.png&imgrefurl=https%3A%2F%2Fprojectiot123.com%2F2019%2F05%2F24%2Fintroduction-to-not-gate%2F&tbnid=P-bBqmSH9dtuEM&vet=12ahUKEwjyu_fKjZvrAhXHeysKHeNZA_oQMygAegUIARDLAQ..i&docid=WhfUA9SrFHRPyM&w=1274&h=584&q=notgate&ved=2ahUKEwjyu_fKjZvrAhXHeysKHeNZA_oQMygAegUIARDLAQ" />
+          </div>
+          <div>
+            <p class="container p-theory">
+              When the fuel level drops below the reserve/minimum level (1/4 th level of tank), the level- sensor gives output as logic HIGH. The NOT gate produces a LOW output, and the RED LED glows to indicate this fuel shortage status. To simulate the variation in the fuel level in the tank, a slider is provided.
+            </p>
+
+        <h4 class="aim-div">
+          2. Synchronous Counter
+        </h4>
+
+          <p class="container p-theory">
+              Unlike the asynchronous counter, synchronous counter has one global clock which drives each flip flop so output changes in parallel. The one advantage of synchronous counter over asynchronous counter is, it can operate on higher frequency than asynchronous counter as it does not have cumulative delay because of same clock is given to each flip flop.
+          </p>
+
+      <div class="button-aim">
+      <a href="procedure.html">
+        <button class="btn-aim-theory btn btn-primary">
+          Go to procedure
+        </button>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
